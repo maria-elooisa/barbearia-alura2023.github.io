@@ -1,0 +1,305 @@
+/*Cabeçalho da página*/
+body{
+    font-family: 'Cinzel', serif;
+}
+
+header {
+    background: #BBBBBB;
+    padding: 2px 0;
+}
+
+/*Aba produtos*/
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.produtos{
+    width: 940px;
+    margin: 0, auto;
+    padding: 50px 255px;
+}
+
+.produtos il{
+    text-align: center;
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 3px solid #000000;
+    border-radius: 10px;
+}
+
+.produtos il:hover{
+    border-color: yellow;
+}
+
+.produtos il:hover h2{
+    font-size: 35px;
+}
+.produtos il:active{
+    border-color: green;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.descricao{
+    font-size: 18px;
+}
+
+.preco{
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+/*Aba contato - formulário*/
+#nome, #email, #telefone{
+    padding: 10px 185px;
+}
+
+form{
+    margin: 40px 40px; 
+}
+
+form label, legend{
+    display: block;
+    font-size: 20px;
+    margin: 10px 0 5px 0;
+}
+
+.inputpadrao{
+    display: block;
+    margin: 10px 0 5px 0;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.titulo{
+    margin: 10px 0 5px 0;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 400px;
+    padding: 20px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+table{
+    margin: 20px 40px;
+}
+
+thead{
+    background: #555;
+    color: white;
+    font-weight: bolder;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/*Estilo para a página inicial*/
+.bannerum {
+    width:100%;
+}
+
+.tipo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 1em 0 1em;
+    clear: left;
+    /*text-shadow: 2px 2px 5px white; cor do texto*/
+}
+
+/*Marca a primeira letra em negrito
+.tipo-principal:first-letter{
+    font-weight: bold;
+}*/
+
+/* Para adicionar caracteres somente no css
+.tipo-principal:after{content:"]";}
+.tipo-principal:before{content:"[";}*/
+
+.principalteste{
+    padding: 3em 0;
+    background: #3c485c;
+}
+.conteudo-principal{
+    width: 940px;
+    margin: 0 auto;
+}
+.conteudo-principal p {
+    margin: 1em 0 1em;
+}
+
+.conteudo-principal strong{
+    font-weight: bolder;
+}
+
+.conteudo-principal em{
+    font-style: italic;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#3c485c,#ab6634);
+}
+
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.benefoto{
+    width: 60%;
+    opacity: 0.9;
+    transform: 40ms;
+    box-shadow: 10px 10px 20px 10px #000000;
+}
+
+.benefoto:hover{
+    opacity: 1;
+    /*transform: scale(1.1);*/
+}
+
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.beneficios {
+    padding: 3em 0;
+    background: #ab6634;
+}
+
+.itens{
+    line-height: 1.5;
+}
+
+.itens::before{
+    content: " ✦ ";
+}
+.itens:first-child {
+    font-weight: bold;
+}
+
+.utensilios{
+    width: 190px;
+    float: left; /*Todos os Elementos são afetados*/
+    margin: 0 20px 20px 0;
+}
+
+.videoum{
+    width: 560px;
+    margin: 2em auto;
+}
+
+/*Rodapé da página*/
+footer{
+    background-image: url("../imgs/fundorodape.png");
+    
+    text-align: center;
+    padding: 40px 0;
+}
+
+.copyright{
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 480px){
+    .caixa, .conteudo-principal, .conteudo-beneficios, .mapa-conteudo, .videoum{
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+    .lista-beneficios, .benefoto{
+        width: 100%;
+    }
+    
+    .produtos{
+        width: auto;
+    }
+
+    .produtos il{
+      width: 100%;
+    }
+
+    .enviar{
+        width: 100%;
+    }
+
+    textarea{
+        width: 100%;
+    }
+
+    #nome, #email, #telefone{
+        padding: 0;
+    }
+}
+
